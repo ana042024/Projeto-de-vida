@@ -2,10 +2,10 @@
 
 :root {
     --cor-de-fundo: #2e021a;
-    --verde: #6FFF57;
+    --roxo: #9B59B6; /* substituindo o verde */
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
-    --botao-inativo: rgba(91, 4, 58, 0,86);
+    --botao-inativo: rgba(91, 4, 58, 0.86); /* corrigido alfa */
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -14,7 +14,6 @@ body {
     color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -33,9 +32,8 @@ body {
 }
 
 .titulo-principal span {
-    color: var(--verde);
+    color: var(--roxo);
 }
-
 
 .botao {
     font-family: 'Chakra Petch', sans-serif;
@@ -63,7 +61,7 @@ body {
 
 .botao.ativo {
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--roxo);
 }
 
 .abas-textos {
@@ -87,7 +85,7 @@ body {
 
 .aba-conteudo-titulo-secundario {
     text-align: center;
-    color: var(--verde);
+    color: var(--roxo);
     text-transform: uppercase;
 }
 
@@ -106,14 +104,12 @@ body {
 .contador-digito-numero {
     font-size: 80px;
     margin: 0;
-
 }
 
 .contador-digito-texto {
-    color: var(--verde);
+    color: var(--roxo);
     font-size: 20px;
     margin: 0;
-
 }
 
 @media screen and (min-width: 768px) {
